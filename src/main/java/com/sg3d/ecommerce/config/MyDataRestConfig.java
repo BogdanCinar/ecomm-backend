@@ -1,7 +1,8 @@
-package com.luv2code.ecommerce.config;
+package com.sg3d.ecommerce.config;
 
-import com.luv2code.ecommerce.entity.Product;
-import com.luv2code.ecommerce.entity.ProductCategory;
+
+import com.sg3d.ecommerce.entity.Product;
+import com.sg3d.ecommerce.entity.ProductCategory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
