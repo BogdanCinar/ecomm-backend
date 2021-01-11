@@ -1,6 +1,5 @@
-package com.sg3d.ecommerce.entity;
+package com.luv2code.ecommerce.entity;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -9,6 +8,7 @@ import java.util.Set;
 
 @Entity
 @Table(name="product_category")
+// @Data -- known bug
 @Getter
 @Setter
 public class ProductCategory {
@@ -21,6 +21,14 @@ public class ProductCategory {
     @Column(name = "category_name")
     private String categoryName;
 
-    @OneToMany(cascade = CascadeType.ALL,mappedBy = "category")
-    Set<Product> products;
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "category")
+    private Set<Product> products;
+
 }
+
+
+
+
+
+
+
